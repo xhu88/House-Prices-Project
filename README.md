@@ -1,2 +1,5 @@
-# House-Prices-Project
-DNSC 3288 Final Project
+# House Prices Model Card
+
+### Basic Information
+
+* **Group developing model**: 
