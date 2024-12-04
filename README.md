@@ -2,7 +2,7 @@
 
 ### Basic Information
 
-* **Group developing model**: 
+* **Group developing model**: Meghana Srinivasaiah, Jake Fitzpatrick, Jesse Mutamba, Xinya Hu
 * **Model date**: December, 2024
 * **Model version**:
 * **License**: MIT
