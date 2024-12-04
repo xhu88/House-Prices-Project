@@ -5,7 +5,7 @@
 * **Group developing model**: 
 * **Model date**: December, 2024
 * **Model version**:
-* **Liscen**: MIT
+* **License**: MIT
 * **Model Implementation Code**:
 
 ### Intended Use
