@@ -15,10 +15,11 @@
 
 ### Training Data
 
-* Data Dictionary:
-
 * **Source of Training Data**:
 * **How training data was divided into test data and validation data**:
 * **Number of rows in training and validation data**:
   * Training rows:
   * Validation rows:
+
+* **Data Dictionary**:
+  
