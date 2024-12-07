@@ -4,7 +4,7 @@
 
 * **Group developing model**: Meghana Srinivasaiah, Jake Fitzpatrick, Jesse Mutamba, Xinya Hu
 * **Model date**: December, 2024
-* **Model version**:
+* **Model version**: 1.0
 * **License**: MIT
 * **Model Implementation Code**:
 
