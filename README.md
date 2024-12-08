@@ -145,3 +145,8 @@ if model_name == 'ResNet':
         y_pred = model.predict(X_test)
         return model, y_pred, None
 ```
+### Quantitative Analysis
+
+### Ethical Considerations
+* **Describe potential negative impacts of using your model**:
+  * Math or software problems: Some of the potential negative impacts of using our model in the math/software aspect is that the errors in the dataset such as missing or imbalanced data may propagate through the model, which may cause bias or errors in the output. Additionally, if the random forest regressor is not properly tuned, such as set with incorrect hyperparameters, the model may perform well on the training data, but poorly on unseen data, which would also potentially lead to inaccurate predictions. 
