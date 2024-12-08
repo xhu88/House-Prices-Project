@@ -112,9 +112,36 @@
 * State any differences in columns between training and test data: Training data has labels, test data has no labels
 
 ### Model Details
-*Columns used as inputs in the final model: 'OverallQual', 'GrLivArea', 'TotalBsmtSF', 'FullBath', 'YearBuilt', 'YearRemodAdd', 'GarageArea', '1stFlrSF', '2ndFlrSF', 'MasVnrArea', 'WoodDeckSF'
-*Column(s) used as target(s) in the final model: 'SalePrice'
-*Type of model: Decision Tree
-*Software used to implement the model: TensorFlow, XGBoost, LightGBM, Plotly, Pandas, NumPy, Scikit-learn
-*Version of the modeling software: 
-Hyperparameters or other settings of your model:
+* **Columns used as inputs in the final model:** 'OverallQual', 'GrLivArea', 'TotalBsmtSF', 'FullBath', 'YearBuilt', 'YearRemodAdd', 'GarageArea', '1stFlrSF', '2ndFlrSF', 'MasVnrArea', 'WoodDeckSF'
+* **Column(s) used as target(s) in the final model:** 'SalePrice'
+* **Type of model:** Decision Tree
+* **Software used to implement the model:** TensorFlow, XGBoost, LightGBM, Plotly, Pandas, NumPy, Scikit-learn
+* **Version of the modeling software:** 
+* **Hyperparameters or other settings of your model:**
+
+```
+if model_name == 'ResNet':
+        model = create_tabular_resnet(X_train.shape[1])
+        model.compile(optimizer='adam', loss='mse')
+        history = model.fit(
+            X_train, y_train,
+            validation_split=0.2,
+            epochs=50,
+            batch_size=32,
+            verbose=1
+        )
+        y_pred = model.predict(X_test).flatten()
+        return model, y_pred, history
+
+    elif model_name == 'XGBoost':
+        model = xgb.XGBRegressor(n_estimators=100, learning_rate=0.1, max_depth=5)
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        return model, y_pred, None
+
+    elif model_name == 'LightGBM':
+        model = lgb.LGBMRegressor(n_estimators=100, learning_rate=0.1, max_depth=5)
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        return model, y_pred, None
+```
