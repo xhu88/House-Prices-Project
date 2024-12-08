@@ -15,8 +15,8 @@
 
 ### Training Data
 
-* **Source of Training Data**:
-* **How training data was divided into test data and validation data**:
+* **Source of Training Data**: Kaggle.com, House Prices Prediction using TFDF, https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input
+* **How training data was divided into test data and validation data**: 80/20 training - validation split. Test data is provided
 * **Number of rows in training and validation data**:
   * Training rows:
   * Validation rows:
@@ -42,8 +42,8 @@
 | Condition2       | Feature        | Nominal           | Proximity to main road or railroad (if a second is present). |
 | BldgType         | Feature        | Nominal           | Type of dwelling.                                         |
 | HouseStyle       | Feature        | Nominal           | Style of dwelling.                                        |
-| OverallQual      | Feature        | Ordinal           | Overall material and finish quality.                     |
-| OverallCond      | Feature        | Ordinal           | Overall condition rating.                                 |
+| OverallQual      | Feature        | Ordinal           | Overall material and finish quality. 1 to 10, Very Poor to Very Excellent                     |
+| OverallCond      | Feature        | Ordinal           | Overall condition rating. 1 to 10, Very Poor to Very Excellent                                 |
 | YearBuilt        | Feature        | Interval          | Original construction date.                               |
 | YearRemodAdd     | Feature        | Interval          | Remodel date.                                             |
 | RoofStyle        | Feature        | Nominal           | Type of roof.                                             |
@@ -55,7 +55,7 @@
 | ExterQual        | Feature        | Ordinal           | Exterior material quality.                               |
 | ExterCond        | Feature        | Ordinal           | Present condition of the material on the exterior.       |
 | Foundation       | Feature        | Nominal           | Type of foundation.                                       |
-| BsmtQual         | Feature        | Ordinal           | Height of the basement.                                  |
+| BsmtQual         | Feature        | Ordinal           | Height of the basement. From NA (No Basement to Ex (100+ inches).                                 |
 | BsmtCond         | Feature        | Ordinal           | General condition of the basement.                       |
 | BsmtExposure     | Feature        | Nominal           | Walkout or garden level basement walls.                  |
 | BsmtFinType1     | Feature        | Nominal           | Quality of basement finished area.                       |
@@ -66,11 +66,12 @@
 | TotalBsmtSF      | Feature        | Ratio             | Total square feet of basement area.                      |
 | Heating          | Feature        | Nominal           | Type of heating.                                          |
 | HeatingQC        | Feature        | Ordinal           | Heating quality and condition.                           |
-| CentralAir       | Feature        | Nominal           | Central air conditioning.                                |
+| CentralAir       | Feature        | Binary           | Central air conditioning.  N or Y
+|
 | Electrical       | Feature        | Nominal           | Electrical system.                                        |
 | 1stFlrSF         | Feature        | Ratio             | First Floor square feet.                                 |
 | 2ndFlrSF         | Feature        | Ratio             | Second floor square feet.                                |
-| LowQualFinSF     | Feature        | Ratio             | Low quality finished square feet (all floors).           |
+| LowQualFinSF     | Feature        | Ratio             | Low-quality finished square feet (all floors).           |
 | GrLivArea        | Feature        | Ratio             | Above grade (ground) living area square feet.            |
 | BsmtFullBath     | Feature        | Ratio             | Basement full bathrooms.                                 |
 | BsmtHalfBath     | Feature        | Ratio             | Basement half bathrooms.                                 |
@@ -105,3 +106,16 @@
 | YrSold           | Feature        | Interval          | Year Sold.                                              
 | SaleType         | Feature        | Nominal           | Type of sale.                                           
 | SaleCondition    | Feature        | Nominal           | Condition of sale.                               
+
+### Test Data
+* **Source of Test Data**: Kaggle.com, House Prices Prediction using TFDF, https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input
+* **Number of rows in test data**:
+* State any differences in columns between training and test data: Training data has labels, test data has no labels
+
+### Model Details
+*Columns used as inputs in the final model: 'OverallQual', 'GrLivArea', 'TotalBsmtSF', 'FullBath', 'YearBuilt', 'YearRemodAdd', 'GarageArea', '1stFlrSF', '2ndFlrSF', 'MasVnrArea', 'WoodDeckSF'
+*Column(s) used as target(s) in the final model: 'SalePrice'
+*Type of model: Decision Tree
+*Software used to implement the model: TensorFlow, XGBoost, LightGBM, Plotly, Pandas, NumPy, Scikit-learn
+*Version of the modeling software: 
+Hyperparameters or other settings of your model:
