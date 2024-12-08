@@ -66,8 +66,7 @@
 | TotalBsmtSF      | Feature        | Ratio             | Total square feet of basement area.                      |
 | Heating          | Feature        | Nominal           | Type of heating.                                          |
 | HeatingQC        | Feature        | Ordinal           | Heating quality and condition.                           |
-| CentralAir       | Feature        | Binary           | Central air conditioning.  N or Y
-        |
+| CentralAir       | Feature        | Binary           | Central air conditioning. N or Y                 |
 | Electrical       | Feature        | Nominal           | Electrical system.                                        |
 | 1stFlrSF         | Feature        | Ratio             | First Floor square feet.                                 |
 | 2ndFlrSF         | Feature        | Ratio             | Second floor square feet.                                |
