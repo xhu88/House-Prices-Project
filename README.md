@@ -192,12 +192,11 @@ Key Insights:
 ![Residual plot ](https://github.com/user-attachments/assets/443b2c6b-4b23-4e81-bd1b-9ffa75cc9b8c)
 
 ## Real-World Implications and Actionable Insights     
-* Model Reliability: The Model is effective for predicting house priceses, particulary for mid-range properties, making it sutible efor real estate applications.
-* Key Features: Focus on improving `OverallQual` and `GrLivArea` to maximize property value and command higher prices.
-* Luxury Properties: The model struggles with high-priced, unique properties. Combine predictions with expert evaluations for accurate pricing.
-* Market Analysis: Use the model to identify impactful features by neighborhood or region. Refine or enhance it for luxury markets by adding specific features.
+* Model Reliability: The Model is effective for predicting house prices, particularly for mid-range properties, making it suitable for real estate applications.
+* Key Features: Improve `OverallQual` and `GrLivArea` to maximize property value and command higher prices.
+* Luxury Properties: The model needs to improve with high-priced, unique properties. Combine predictions with expert evaluations for accurate pricing.
+* Market Analysis: Use the model to identify impactful features by neighborhood or region. Add specific features to refine or enhance it for luxury markets.
 * Risk Management: Residual analysis highlights pricing risks for outlier properties. Use this to manage inconsistencies effectively.
-
 
 # Ethical Considerations
 * **Describe potential negative impacts of using your model**:
