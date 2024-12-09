@@ -188,7 +188,7 @@ Key Observations:
 | YearBuilt          | 0.52            |
 
 ## Model Loss During Training:
-![Model loss vis](https://github.com/user-attachments/assets/53afae78-32f8-4732-9920-3fe1986e3b8b)
+![Model loss vis](https://github.com/xhu88/House-Prices-Project/blob/main/Model%20Loss%20During%20Training.png)
 
 Training and validation loss stabilizes after 50 epochs.
 Validation loss remains slightly lower than training loss, indicating good generalization.
