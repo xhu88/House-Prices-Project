@@ -154,9 +154,11 @@ LightGBM Hyperparameters:
 # Quantitative Analysis
 
 * Models were assessed primarily with accuracy from the Kaggle Competition. See details below:
-| Train Accuracy | Validation Accuracy | Test Accuracy |
-| -------------- | ------------------- | ------------- |
-|                |                     |               |
+
+| **Train Accuracy** | **Validation Accuracy** | **Test Accuracy** |
+|--------------------|-------------------------|-------------------|
+|                    |                         |                   |
+
 
 ### Model Evaluation Metrics
  
