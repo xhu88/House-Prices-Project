@@ -120,6 +120,7 @@
 * **Version of the modeling software:** TensorFlow v2.16.1, XGBoost 2.1.3, LightGBM 4.5.0, Plotly 5.24.1, Pandas 2.2.3, NumPy 2.2.0, Scikit-Learn 1.5.2 
 * **Hyperparameters or other settings of your model:**
 
+Resnet Hyperparameters: 
 ```
 if model_name == 'ResNet':
         model = create_tabular_resnet(X_train.shape[1])
@@ -133,13 +134,17 @@ if model_name == 'ResNet':
         )
         y_pred = model.predict(X_test).flatten()
         return model, y_pred, history
-
+```
+XGBoost Hyperparameters:
+```
     elif model_name == 'XGBoost':
         model = xgb.XGBRegressor(n_estimators=100, learning_rate=0.1, max_depth=5)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
         return model, y_pred, None
-
+```
+LightGBM Hyperparameters: 
+```
     elif model_name == 'LightGBM':
         model = lgb.LGBMRegressor(n_estimators=100, learning_rate=0.1, max_depth=5)
         model.fit(X_train, y_train)
