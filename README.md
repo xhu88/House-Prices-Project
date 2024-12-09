@@ -153,7 +153,7 @@ if model_name == 'ResNet':
     
 
 ### Correclation Analysis
-* A Correclation Heatmap was generated to highlight relationships among features and their impact on `salesprice`.
+* A correclation heatmap was generated to highlight relationships among features and their impact on `sales price`.
 
 | **Feature**       | **Correlation** |
 |--------------------|-----------------|
@@ -168,7 +168,7 @@ if model_name == 'ResNet':
 | BsmtQual_Ex       | 0.553           |
 | TotRmsAbvGrd      | 0.534           |
 
-* Stronggest correlation( r= 0.791), emphasing that the overall quality of the property is the most influential feature on the model. 
+* Strongest correlation( r= 0.791), emphasizing that the property's overall quality is the model's most influential feature. 
 
 ## Residual Analysis 
 * Residuals in the model are centerd around y=0, indicating a good fit.
