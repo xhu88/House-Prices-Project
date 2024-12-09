@@ -150,7 +150,8 @@ if model_name == 'ResNet':
 ```
 # Quantitative Analysis
 
-### Model Loss during training: 
+### Model Evaluation Metrics
+ 
 | **Model**         | **Mean RMSE**    | **Std RMSE**    |
 |--------------------|------------------|-----------------|
 | Lasso             | $42,622.72       | $8,413.85       |
