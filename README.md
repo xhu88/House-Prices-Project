@@ -3,10 +3,10 @@
 ### Basic Information
 
 * **Group developing model**:
-* Meghana Srinivasaiah, meghanasrinivas@gwu.edu
-* Jake Fitzpatrick, jakefitz@gwu.edu
-* Jesse Mutamba, jesse.mutamba@gwu.edu
-* Xinya Hu, xhu88@gwu.edu
+*  Meghana Srinivasaiah, meghanasrinivas@gwu.edu
+*  Jake Fitzpatrick, jakefitz@gwu.edu
+*  Jesse Mutamba, jesse.mutamba@gwu.edu
+*  Xinya Hu, xhu88@gwu.edu
 * **Model date**: December, 2024
 * **Model version**: 1.0
 * **License**: MIT
