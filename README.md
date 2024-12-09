@@ -151,45 +151,41 @@ if model_name == 'ResNet':
 # Quantitative Analysis
 
 ### Model Loss during training: 
-* Training and validation loss steadily decreases steadily and stabilizes after 50 epochs.
-* Validation loss remains slightly lower than training loss. This indicates good generalization and no overfitting.
-![Model loss vis](https://github.com/user-attachments/assets/dc44fa85-492d-474c-bbf0-b9313a88a4e1)
+| **Model**         | **Mean RMSE**    | **Std RMSE**    |
+|--------------------|------------------|-----------------|
+| Lasso             | $42,622.72       | $8,413.85       |
+| Ridge             | $31,278.52       | $7,569.72       |
+| Random Forest     | $30,066.71       | $4,084.11       |
+| XGBoost           | $28,569.43       | $3,956.20       |
+* XGBoost achieved the lowest RMSE on validation data, making it the most accurate model.
 
+## Correlation Heatmap:
+![The heatmap](https://github.com/user-attachments/assets/0719f9eb-359b-4781-b97c-3bb7bc720a99)
 
-## Correlation Analysis
-* A correlation heatmap was generated to highlight relationships among features and their impact on `sales price`.
+Displays the relationships between all features and SalePrice.
+Key Observations:
+`OverallQual` and `GrLivArea` show the highest positive correlations with SalePrice.
+
+* Top Correlated Features with SalePrice
 
 | **Feature**       | **Correlation** |
 |--------------------|-----------------|
-| SalePrice         | 1.000           |
-| OverallQual       | 0.791           |
-| GrLivArea         | 0.709           |
-| GarageCars        | 0.640           |
-| GarageArea        | 0.623           |
-| TotalBsmtSF       | 0.614           |
-| 1stFlrSF          | 0.606           |
-| FullBath          | 0.561           |
-| BsmtQual_Ex       | 0.553           |
-| TotRmsAbvGrd      | 0.534           |
+| OverallQual        | 0.79            |
+| GrLivArea          | 0.71            |
+| GarageArea         | 0.62            |
+| TotalBsmtSF        | 0.61            |
+| YearBuilt          | 0.52            |
 
-* Strongest correlation( r= 0.791), emphasizing that the property's overall quality is the model's most influential feature. 
-![Heatmap](https://github.com/user-attachments/assets/faf3df77-ab89-4e44-9122-38a5ce7e8edc)
+## Model Loss During Training:
+![Model loss vis](https://github.com/user-attachments/assets/53afae78-32f8-4732-9920-3fe1986e3b8b)
 
-## Feature Importance 
+Training and validation loss stabilize after 50 epochs.
+Validation loss remains slightly lower than training loss, indicating good generalization.
 
-Key Insights:
-* OverallQual: Most influential feature, contributing 60.4% to predictions.
-* GrLivArea: The second most significant area is 10.8%, reflecting the importance of the above-ground living area.
-* TotalBsmtSF: Adds 3.8%, showing the value of basement size in predicting house prices.
+## Residual Plot:
+![Residual plot ](https://github.com/user-attachments/assets/5e61ee79-4019-4c04-95b9-d75ffbccd8f7)
 
-![Imporantce ](https://github.com/user-attachments/assets/095e4d9f-7195-475a-b6e0-d9d6cd76edc9)
-
-
-## Residual Analysis 
-* Residuals in the model are centered around y=0, indicating a good fit.
-* Heteroscedasticity: Errors increase for higher predicted values(> 300,000).
-* Outliers suggest overestimation for high-priced properties
-![Residual plot ](https://github.com/user-attachments/assets/443b2c6b-4b23-4e81-bd1b-9ffa75cc9b8c)
+Residuals are mostly centered around y=0, showing a good fit with slight heteroscedasticity
 
 ## Real-World Implications and Actionable Insights     
 * Model Reliability: The Model is effective for predicting house prices, particularly for mid-range properties, making it suitable for real estate applications.
