@@ -6,7 +6,7 @@
 * **Model date**: December, 2024
 * **Model version**: 1.0
 * **License**: MIT
-* **Model Implementation Code**: [DNSC3288_SemesterProject_Final(2).ipynb](https://github.com/xhu88/House-Prices-Project/blob/main/DNSC3288_SemesterProject_Final%20(2).ipynb)
+* **Model Implementation Code**: [DNSC3288_SemesterProject_Final.ipynb](https://github.com/xhu88/House-Prices-Project/blob/main/DNSC3288_SemesterProject_Final%20(2).ipynb)
 
 ### Intended Use
 * **Primary Intended Uses**: This model is for educational uses only.
