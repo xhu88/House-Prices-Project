@@ -145,7 +145,36 @@ if model_name == 'ResNet':
         y_pred = model.predict(X_test)
         return model, y_pred, None
 ```
-### Quantitative Analysis
+# Quantitative Analysis
+
+### Model Loss during training: 
+* Training and validation loss steadly decrease steadly and stablitlize after 50 epochs.
+* Validation loss reamains slightly lower than training loss. This indicates good generalization and no overfitting.
+    
+
+### Correclation Analysis
+* A Correclation Heatmap was generated to highlight relationships among features and their impact on `salesprice`.
+
+| **Feature**       | **Correlation** |
+|--------------------|-----------------|
+| SalePrice         | 1.000           |
+| OverallQual       | 0.791           |
+| GrLivArea         | 0.709           |
+| GarageCars        | 0.640           |
+| GarageArea        | 0.623           |
+| TotalBsmtSF       | 0.614           |
+| 1stFlrSF          | 0.606           |
+| FullBath          | 0.561           |
+| BsmtQual_Ex       | 0.553           |
+| TotRmsAbvGrd      | 0.534           |
+
+* Stronggest correlation( r= 0.791), emphasing that the overall quality of the property is the most influential feature on the model. 
+
+## Residual Analysis 
+* Residuals in the model are centerd around y=0, indicating a good fit.
+* Heteroscedasity: Errors increase for higher predicted values(> 300,000).
+* Outliers sugest overerstimation for high priced properies.
+
 
 ### Ethical Considerations
 * **Describe potential negative impacts of using your model**:
