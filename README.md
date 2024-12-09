@@ -171,7 +171,7 @@ LightGBM Hyperparameters:
 * XGBoost achieved the lowest RMSE on validation data, making it the most accurate model.
 
 ## Correlation Heatmap:
-![The heatmap](https://github.com/user-attachments/assets/0719f9eb-359b-4781-b97c-3bb7bc720a99)
+![The heatmap](https://github.com/xhu88/House-Prices-Project/blob/main/Heatmap.png)
 
 Displays the relationships between all features and SalePrice.
 Key Observations:
