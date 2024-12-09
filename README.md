@@ -109,7 +109,7 @@
 ### Test Data
 * **Source of Test Data**: Kaggle.com, House Prices Prediction using TFDF, https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input
 * **Number of rows in test data**:
-* State any differences in columns between training and test data: Training data has labels, test data has no labels
+* **State any differences in columns between training and test data**: Training data has labels, test data has no labels
 
 ### Model Details
 * **Columns used as inputs in the final model:** 'OverallQual', 'GrLivArea', 'TotalBsmtSF', 'FullBath', 'YearBuilt', 'YearRemodAdd', 'GarageArea', '1stFlrSF', '2ndFlrSF', 'MasVnrArea', 'WoodDeckSF'
@@ -149,4 +149,9 @@ if model_name == 'ResNet':
 
 ### Ethical Considerations
 * **Describe potential negative impacts of using your model**:
-  * Math or software problems: Some of the potential negative impacts of using our model in the math/software aspect is that the errors in the dataset such as missing or imbalanced data may propagate through the model, which may cause bias or errors in the output. Additionally, if the random forest regressor is not properly tuned, such as set with incorrect hyperparameters, the model may perform well on the training data, but poorly on unseen data, which would also potentially lead to inaccurate predictions. 
+  * Math or software problems: Some of the potential negative impacts of using our model in the math/software aspect is that the errors in the dataset such as missing or imbalanced data may propagate through the model, which may cause bias or errors in the output. Additionally, if the random forest regressor is not properly tuned, such as set with incorrect hyperparameters, the model may perform well on the training data, but poorly on unseen data, which would also potentially lead to inaccurate predictions.
+  * Real World Risks: Some potential real world risks is that if the predictions are used in high-stake scenarios, such as real estate pricing or financial forecasting, inaccurate outputs could lead to financial loss or unfair treatment of individuals. Over-reliance on model predictions without considering domain knowledge or expert input might also reusult in flawed decisions.
+* **Describe potential uncertainties relating to the impacts of using your model**:
+  * Math or software problems: AS a complex ensemble method, the Random Forest mmodel's predictions are difficult to interpret, potentially reducing trust, or leading to misuse. Also, both the training and testing data may not represent all possible scenarios or populations, which the model's ability to generalize to novel scenarios is uncertain in this case.
+  * Real World Risks: Potential real-world uncertainties relating to the impacts of using our model is that disparties in the training data may result in unequal treatment of vulnerable populations in the model's outputs. If the training dataset lacks diversity or fails to capture real-world variability, predictions might not be reliable to real-world uses. Additionally, misinterpretation or overreliance on the model's results can perpetuate systemic inequalities or lead to unintended results.
+* **Describe any unexpected or results**: Some issues that our group encountered was that our model experienced potentiall overfitting which would possibly cause variance in the data because we worked with a slightly imbalanced dataset. We also came across some of the common pre-processing issues such as imbalanced and missing data. Some of the other issuses are bugs and the prevention of black boxes, also making sure that our model does not convince and/or manipulate false information.
