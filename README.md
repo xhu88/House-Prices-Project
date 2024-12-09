@@ -150,9 +150,10 @@ if model_name == 'ResNet':
 ### Model Loss during training: 
 * Training and validation loss steadly decrease steadly and stablitlize after 50 epochs.
 * Validation loss reamains slightly lower than training loss. This indicates good generalization and no overfitting.
-    
+![Model loss vis](https://github.com/user-attachments/assets/dc44fa85-492d-474c-bbf0-b9313a88a4e1)
 
-### Correclation Analysis
+
+## Correclation Analysis
 * A correclation heatmap was generated to highlight relationships among features and their impact on `sales price`.
 
 | **Feature**       | **Correlation** |
@@ -169,12 +170,23 @@ if model_name == 'ResNet':
 | TotRmsAbvGrd      | 0.534           |
 
 * Strongest correlation( r= 0.791), emphasizing that the property's overall quality is the model's most influential feature. 
+![Heatmap](https://github.com/user-attachments/assets/faf3df77-ab89-4e44-9122-38a5ce7e8edc)
+
+# Feature Importance 
+
+Key Insights:
+* OverallQual: Most influential feature, contributing 60.4% to predictions.
+* GrLivArea: Second most significant at 10.8%, reflecting the importance of above-ground living area.
+* TotalBsmtSF: Adds 3.8%, showing the value of basement size in predicting house prices.
+
+![Imporantce ](https://github.com/user-attachments/assets/095e4d9f-7195-475a-b6e0-d9d6cd76edc9)
 
 
 ## Residual Analysis 
 * Residuals in the model are centered around y=0, indicating a good fit.
 * Heteroscedasticity: Errors increase for higher predicted values(> 300,000).
 * Outliers suggest overestimation for high-priced properties
+![Residual plot ](https://github.com/user-attachments/assets/443b2c6b-4b23-4e81-bd1b-9ffa75cc9b8c)
 
 
 ### Ethical Considerations
