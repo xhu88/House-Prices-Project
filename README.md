@@ -170,10 +170,11 @@ if model_name == 'ResNet':
 
 * Strongest correlation( r= 0.791), emphasizing that the property's overall quality is the model's most influential feature. 
 
+
 ## Residual Analysis 
-* Residuals in the model are centerd around y=0, indicating a good fit.
-* Heteroscedasity: Errors increase for higher predicted values(> 300,000).
-* Outliers sugest overerstimation for high priced properies.
+* Residuals in the model are centered around y=0, indicating a good fit.
+* Heteroscedasticity: Errors increase for higher predicted values(> 300,000).
+* Outliers suggest overestimation for high-priced properties
 
 
 ### Ethical Considerations
