@@ -15,7 +15,7 @@
 
 ### Training Data
 
-* **Source of Training Data**: Kaggle.com, House Prices Prediction using TFDF, https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input
+* **Source of Training Data**: Kaggle.com, [House Prices Prediction using TFDF](https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input)
 * **How training data was divided into test data and validation data**: 40% training, 10% validation, 50% testing
 * **Number of rows in training and validation data**:
   * Training rows: 1168
