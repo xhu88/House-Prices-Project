@@ -175,7 +175,7 @@ if model_name == 'ResNet':
 * Strongest correlation( r= 0.791), emphasizing that the property's overall quality is the model's most influential feature. 
 ![Heatmap](https://github.com/user-attachments/assets/faf3df77-ab89-4e44-9122-38a5ce7e8edc)
 
-# Feature Importance 
+## Feature Importance 
 
 Key Insights:
 * OverallQual: Most influential feature, contributing 60.4% to predictions.
@@ -191,8 +191,15 @@ Key Insights:
 * Outliers suggest overestimation for high-priced properties
 ![Residual plot ](https://github.com/user-attachments/assets/443b2c6b-4b23-4e81-bd1b-9ffa75cc9b8c)
 
+## Real-World Implications and Actionable Insights     
+* Model Reliability: The Model is effective for predicting house priceses, particulary for mid-range properties, making it sutible efor real estate applications.
+* Key Features: Focus on improving `OverallQual` and `GrLivArea` to maximize property value and command higher prices.
+* Luxury Properties: The model struggles with high-priced, unique properties. Combine predictions with expert evaluations for accurate pricing.
+* Market Analysis: Use the model to identify impactful features by neighborhood or region. Refine or enhance it for luxury markets by adding specific features.
+* Risk Management: Residual analysis highlights pricing risks for outlier properties. Use this to manage inconsistencies effectively.
 
-### Ethical Considerations
+
+# Ethical Considerations
 * **Describe potential negative impacts of using your model**:
   * Math or software problems: Some of the potential negative impacts of using our model in the math/software aspect is that the errors in the dataset, such as missing or imbalanced data, may propagate through the model, which may cause bias or errors in the output. Additionally, if the random forest regressor is not properly tuned, such as set with incorrect hyperparameters, the model may perform well on the training data but poorly on unseen data, which would also potentially lead to inaccurate predictions.
   * Real-World Risks:  In high-risk situations such as real estate pricing or financial forecasting, organizations and decision-makers often use predictive models to guide their choices. These models are often relied upon without access to sufficient expert advice or domain knowledge, especially in industries such as real estate and finance, where predictive tools play a crucial role. However, relying heavily on these models can lead to serious consequences, including financial loss or unfair treatment, especially if validation is inaccurate or ignored.
