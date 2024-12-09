@@ -148,6 +148,11 @@ if model_name == 'ResNet':
 ```
 # Quantitative Analysis
 
+* Models were assessed primarily with accuracy from the Kaggle Competition. See details below:
+| Train Accuracy | Validation Accuracy | Test Accuracy |
+| -------------- | ------------------- | ------------- |
+|                |                     |               |
+
 ### Model Evaluation Metrics
  
 | **Model**         | **Mean RMSE**    | **Std RMSE**    |
@@ -178,7 +183,7 @@ Key Observations:
 ## Model Loss During Training:
 ![Model loss vis](https://github.com/user-attachments/assets/53afae78-32f8-4732-9920-3fe1986e3b8b)
 
-Training and validation loss stabilize after 50 epochs.
+Training and validation loss stabilizes after 50 epochs.
 Validation loss remains slightly lower than training loss, indicating good generalization.
 
 ## Residual Plot:
