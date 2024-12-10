@@ -157,7 +157,7 @@ LightGBM Hyperparameters:
 
 | **Train Accuracy** | **Validation Accuracy** | **Test Accuracy** |
 |--------------------|-------------------------|-------------------|
-|        $28,569.43            |                         |   0.15325  (Submissions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price.      |
+|                   |                         |   0.15325  (Submissions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price.      |
 
 *Our submission csv was the mean of XGboost and LightGBM predictions.
 
