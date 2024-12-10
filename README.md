@@ -108,7 +108,7 @@
 | SaleCondition    | Feature        | Nominal           | Condition of sale.                               
 
 ### Test Data
-* **Source of Test Data**: Kaggle.com, House Prices Prediction using TFDF, https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input
+* **Source of Test Data**: Kaggle.com, [House Prices Prediction using TFDF](https://www.kaggle.com/code/gusthema/house-prices-prediction-using-tfdf/input)
 * **Number of rows in test data**: 1459
 * **State any differences in columns between training and test data**: Training data has labels, test data has no labels
 
