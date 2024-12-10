@@ -155,10 +155,11 @@ LightGBM Hyperparameters:
 
 * Models were assessed primarily with accuracy from the Kaggle Competition. See details below:
 
-| **Train Accuracy** | **Validation Accuracy** | **Test Accuracy** |
+| **Training Accuracy** | **Validation Accuracy** | **Test Accuracy** |
 |--------------------|-------------------------|-------------------|
-|RMSE: 0.1542         |RMSE: 0.1540         | RMSE:  0.15325  (Submissions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price.      |
+|RMSE:   0.1540         |RMSE: 0.1542         | RMSE:  0.15325      |
 
+For Kaggle Submissions, predictions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price. We calculated our training and validation accuracy with the same metrics as Kaggle's.
 *Our submission csv was the mean of XGboost and LightGBM predictions.
 
 ### Model Evaluation Metrics
