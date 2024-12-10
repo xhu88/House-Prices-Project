@@ -115,9 +115,9 @@
 ### Model Details
 * **Columns used as inputs in the final model:** 'OverallQual', 'GrLivArea', 'TotalBsmtSF', 'FullBath', 'YearBuilt', 'YearRemodAdd', 'GarageArea', '1stFlrSF', '2ndFlrSF', 'MasVnrArea', 'WoodDeckSF'
 * **Column(s) used as target(s) in the final model:** 'SalePrice'
-* **Type of model:** Decision Tree
-* **Software used to implement the model:** TensorFlow, XGBoost, LightGBM, Plotly, Pandas, NumPy, Scikit-learn
-* **Version of the modeling software:** TensorFlow v2.16.1, XGBoost 2.1.3, LightGBM 4.5.0, Plotly 5.24.1, Pandas 2.2.3, NumPy 2.2.0, Scikit-Learn 1.5.2 
+* **Type of model:** XGBoost, LightGBM, Resnet
+* **Software used to implement the model:** TensorFlow, XGBoost, LightGBM, Plotly, Pandas, NumPy, Scikit-learn, Resnet
+* **Version of the modeling software:** TensorFlow v2.16.1, XGBoost 2.1.3, LightGBM 4.5.0, Plotly 5.24.1, Pandas 2.2.3, NumPy 2.2.0, Scikit-Learn 1.5.2, Resnet-152 
 * **Hyperparameters or other settings of your model:**
 
 Resnet Hyperparameters: 
