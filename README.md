@@ -157,7 +157,7 @@ LightGBM Hyperparameters:
 
 | **Train Accuracy** | **Validation Accuracy** | **Test Accuracy** |
 |--------------------|-------------------------|-------------------|
-|                    |                         |   0.15325         |
+|        $28,569.43            |                         |   0.15325  (given as logarithmic RSME       |
 
 
 ### Model Evaluation Metrics
