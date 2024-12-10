@@ -7,7 +7,7 @@
 * **Model date**: December, 2024
 * **Model version**: 1.0
 * **License**: MIT
-* **Model Implementation Code**: [DNSC3288_SemesterProject_Final.ipynb](DNSC3288_SemesterProject_Final.ipynb)
+* **Model Implementation Code**: [DNSC3288_SemesterProject_Final.ipynb](DNSC3288_SemesterProject_Final (1).ipynb)
 
 ### Intended Use
 * **Primary Intended Uses**: This model is for educational uses only.
