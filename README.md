@@ -194,7 +194,7 @@ Training and validation loss stabilizes after 50 epochs.
 Validation loss remains slightly lower than training loss, indicating good generalization.
 
 ## Residual Plot:
-![Residual plot ](https://github.com/user-attachments/assets/5e61ee79-4019-4c04-95b9-d75ffbccd8f7)
+![Residual plot ](https://github.com/xhu88/House-Prices-Project/blob/main/Residual%20Plot.png)
 
 Residuals are mostly centered around y=0, showing a good fit with slight heteroscedasticity
 
