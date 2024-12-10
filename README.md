@@ -161,7 +161,7 @@ LightGBM Hyperparameters:
 
 For Kaggle Submissions, predictions are evaluated on Root-Mean-Squared-Error (RMSE) between the logarithm of the predicted value and the logarithm of the observed sales price. We calculated our training and validation accuracy with the same metrics as Kaggle's.
 
-*Our submission csv was the mean of XGboost and LightGBM predictions.
+*Our submission prediction was the mean of XGboost and LightGBM predictions.
 
 ### Model Evaluation Metrics
  
